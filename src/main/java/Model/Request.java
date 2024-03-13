@@ -35,6 +35,7 @@ public class Request {
 
         float swell_ht_test = hour.getJSONObject(1).getFloat("swell_ht_ft");
         System.out.println(swell_ht_test);
+        // the index 0, 1 are the times. 00:00, 01:00, need to fix that it calls all the times.
 
 /*
         System.out.println(response.body());
