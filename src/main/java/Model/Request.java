@@ -20,26 +20,17 @@ public class Request {
 
         HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
-        // calls response body (all data in list)
+        // calls response body (all data in a list containing more lists and arrays)
         JSONObject object = new JSONObject(response.body());
 
-        // calls forecastday from the response body
-        JSONArray forecastday = object.getJSONObject("forecast").getJSONArray("forecastday");
+        // calls forecastDay array from the response body list
+        JSONArray forecastDay = object.getJSONObject("forecast").getJSONArray("forecastday");
 
-        // calls hour from forecast list
+        // calls hour array from forecastDay array
         // index represents 24 lists corresponding to data at each hour of the day
-        JSONArray hour = forecastday.getJSONObject(0).getJSONArray("hour");
+        JSONArray hour = forecastDay.getJSONObject(0).getJSONArray("hour");
 
-        // Prints swell height in feet!
-        /*float swell_ht_ft = hour.getJSONObject(0).getFloat("swell_ht_ft");
-        System.out.println(swell_ht_ft);*/
-
-        /*float swell_ht_test = hour.getJSONObject(1).getFloat("swell_ht_ft");
-        System.out.println(swell_ht_test);*/
-        // the index 0, 1 are the times. 00:00, 01:00, need to fix that it calls all the times.
-
-
-        // Prints swell height in feet at each hour of the day.
+        // Prints following data at each hour of the day.
         int i = 0;
         for (hour.getJSONObject(i); i < hour.length(); i++) {
             float swellHtFt=  hour.getJSONObject(i).getFloat("swell_ht_ft");
@@ -49,15 +40,8 @@ public class Request {
             System.out.println(swellHtFt);
             System.out.println(windSpeedKph);
             System.out.println(windDirection);
+
         }
-
-
-/*
-        System.out.println(response.body());
-        System.out.println(response.headers().map());
-
-*/
-
     }
 }
 
