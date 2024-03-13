@@ -43,8 +43,14 @@ public class Request {
         int i = 0;
         for (hour.getJSONObject(i); i < hour.length(); i++) {
             float swellHtFt=  hour.getJSONObject(i).getFloat("swell_ht_ft");
+            float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
+            String windDirection = hour.getJSONObject(i).getString("wind_dir");
+
             System.out.println(swellHtFt);
+            System.out.println(windSpeedKph);
+            System.out.println(windDirection);
         }
+
 
 /*
         System.out.println(response.body());
