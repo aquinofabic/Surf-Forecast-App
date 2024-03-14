@@ -23,17 +23,20 @@ public class Request {
         // calls response body (all data in a list containing more lists and arrays)
         JSONObject object = new JSONObject(response.body());
 
-        // calls forecastDay array from the response body list
-        JSONArray forecastDay = object.getJSONObject("forecast").getJSONArray("forecastday");
 
-        // calls hour array from forecastDay array
-        // index represents 24 lists corresponding to data at each hour of the day
-        JSONArray hour = forecastDay.getJSONObject(0).getJSONArray("hour");
+        // Note in JSON format, objects are surrounded by {}, arrays are [].
+        // For example, "forecast":{...,but "forecastday": [{
+        JSONArray hour = object
+                .getJSONObject("forecast")
+                .getJSONArray("forecastday")
+                .getJSONObject(0)
+                .getJSONArray("hour");
+
 
         // Prints following data at each hour of the day.
         int i = 0;
         for (hour.getJSONObject(i); i < hour.length(); i++) {
-            float swellHtFt=  hour.getJSONObject(i).getFloat("swell_ht_ft");
+            float swellHtFt = hour.getJSONObject(i).getFloat("swell_ht_ft");
             float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
             String windDirection = hour.getJSONObject(i).getString("wind_dir");
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Added wind speed in kph and wind direction">
+    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Reformatted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Request.java" afterDir="false" />
     </list>
@@ -44,6 +44,19 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="Request" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Model.Request" />
+      <module name="Surf_Forecast_2.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Surf Forecast 2.0" />
       <method v="2">
@@ -57,6 +70,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Request" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -107,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710366605318</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Reformatted">
+      <option name="closed" value="true" />
+      <created>1710370020165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710370020165</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +153,7 @@
     <MESSAGE value="Parsed JSON data, calling the swell height in feet from Sagres, Portugal.&#10;&#10;Need to add swell height at each hour." />
     <MESSAGE value="Added functionality to print swell height in feet at each hour of the day in Sagres." />
     <MESSAGE value="Added wind speed in kph and wind direction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added wind speed in kph and wind direction" />
+    <MESSAGE value="Reformatted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformatted" />
   </component>
 </project>
