@@ -1,4 +1,4 @@
-package Model;
+package Main;
 
 import java.io.IOException;
 import java.net.URI;
@@ -40,11 +40,16 @@ public class Request {
             float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
             String windDirection = hour.getJSONObject(i).getString("wind_dir");
 
-            System.out.println(swellHtFt);
-            System.out.println(windSpeedKph);
+            System.out.println(i + ":00");
+            System.out.println(swellHtFt + "ft");
+            System.out.println(windSpeedKph + "Kph");
             System.out.println(windDirection);
+            System.out.println();
 
         }
+        Data testData = new Data();
+
+
     }
 }
 
