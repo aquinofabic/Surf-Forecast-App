@@ -38,17 +38,17 @@ public class Request {
         // Prints following data at each hour of the day.
         int i = 0;
         for (hour.getJSONObject(i); i < hour.length(); i++) {
-            float swellHtFt = hour.getJSONObject(i).getFloat("swell_ht_ft");
-            float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
+            float swell = hour.getJSONObject(i).getFloat("swell_ht_ft");
+            float windSpeed = hour.getJSONObject(i).getFloat("wind_kph");
             String windDirection = hour.getJSONObject(i).getString("wind_dir");
 
-            beach.setSwellHeight(swellHtFt);
-            beach.setWindSpeed(windSpeedKph);
+            beach.setSwellHeight(swell);
+            beach.setWindSpeed(windSpeed);
             beach.setWindDirection(windDirection);
 
             System.out.println(i + ":00");
-            System.out.println(swellHtFt + "ft");
-            System.out.println(windSpeedKph + "Kph");
+            System.out.println(swell + "ft");
+            System.out.println(windSpeed + "Kph");
             System.out.println(windDirection);
             System.out.println();
 

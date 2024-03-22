@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Implemented OOP">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711144313425</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implemented OOP">
+      <option name="closed" value="true" />
+      <created>1711144520073</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711144520073</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

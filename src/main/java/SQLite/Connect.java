@@ -11,13 +11,6 @@ public class Connect {
         // SQLite connection string
         String jdbcUrl = "jdbc:sqlite:C:\\Users\\dalef\\OneDrive\\Documents\\Programming + Notes\\Java Projects\\SQLite\\sqlite-tools-win-x64-3450200\\ForecastDatadb.db";
 
-        // SQL statement for creating a new table
-/*        String sql = """
-                CREATE TABLE ForecastData (\s
-                swell_height REAL,\s
-                wind_speed REAL,\s
-                wind_direction TEXT,\s
-                );""";*/
         String sql = """
                 CREATE TABLE IF NOT EXISTS ForecastData (
                 swell_height REAL,
