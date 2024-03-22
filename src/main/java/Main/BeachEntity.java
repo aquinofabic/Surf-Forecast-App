@@ -1,7 +1,5 @@
 package Main;
 
-import java.io.IOException;
-
 public class BeachEntity {
     private float swellHeight;
     private float windSpeed;

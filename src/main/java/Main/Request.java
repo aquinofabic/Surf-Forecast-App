@@ -32,8 +32,8 @@ public class Request {
                 .getJSONObject(0)
                 .getJSONArray("hour");
 
-        BeachEntity forecastData = new BeachEntity();
 
+        BeachEntity beach = new BeachEntity();
 
         // Prints following data at each hour of the day.
         int i = 0;
@@ -42,9 +42,9 @@ public class Request {
             float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
             String windDirection = hour.getJSONObject(i).getString("wind_dir");
 
-            forecastData.setSwellHeight(swellHtFt);
-            forecastData.setWindSpeed(windSpeedKph);
-            forecastData.setWindDirection(windDirection);
+            beach.setSwellHeight(swellHtFt);
+            beach.setWindSpeed(windSpeedKph);
+            beach.setWindDirection(windDirection);
 
             System.out.println(i + ":00");
             System.out.println(swellHtFt + "ft");
