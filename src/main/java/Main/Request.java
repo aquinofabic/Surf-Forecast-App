@@ -47,7 +47,10 @@ public class Request {
             System.out.println();
 
         }
-        Data testData = new Data();
+
+        RequestTest requestTest = new RequestTest();
+        requestTest.getData();
+
 
 
     }

@@ -25,6 +25,7 @@ public class Connect {
                 wind_direction TEXT
                 );""";
 /*
+NEED TO DO NEXT
         public void insert(double swellHt; double windSpeed; String windDir){
             sql = "INSERT INTO ForecastData(swellHt, windSpeed, windDir)"
         }*/

@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Reformatted">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" afterDir="false" />
+    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +40,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/dalef/OneDrive/Documents/MOOC Excercises/Part 4/4.17 Items",
+    "last_opened_file_path": "C:/Users/dalef/OneDrive/Documents/Programming + Notes/Practicing",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Connection">
+  <component name="RunManager">
     <configuration name="Connect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SQLite.Connect" />
       <module name="Surf_Forecast_2.0" />
@@ -93,7 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Connection" />
+        <item itemvalue="Application.Connect" />
         <item itemvalue="Application.Request" />
       </list>
     </recent_temporary>
@@ -155,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710370020165</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database.">
+      <option name="closed" value="true" />
+      <created>1710979302717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710979302717</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +180,7 @@
     <MESSAGE value="Added functionality to print swell height in feet at each hour of the day in Sagres." />
     <MESSAGE value="Added wind speed in kph and wind direction" />
     <MESSAGE value="Reformatted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformatted" />
+    <MESSAGE value="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database." />
   </component>
 </project>
