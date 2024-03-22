@@ -9,7 +9,7 @@ import java.net.http.HttpResponse;
 import org.json.*;
 
 public class Request {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public void getData() throws IOException, InterruptedException {
 
         HttpClient httpClient = HttpClient.newHttpClient();
 
@@ -32,6 +32,8 @@ public class Request {
                 .getJSONObject(0)
                 .getJSONArray("hour");
 
+        BeachEntity forecastData = new BeachEntity();
+
 
         // Prints following data at each hour of the day.
         int i = 0;
@@ -40,6 +42,10 @@ public class Request {
             float windSpeedKph = hour.getJSONObject(i).getFloat("wind_kph");
             String windDirection = hour.getJSONObject(i).getString("wind_dir");
 
+            forecastData.setSwellHeight(swellHtFt);
+            forecastData.setWindSpeed(windSpeedKph);
+            forecastData.setWindDirection(windDirection);
+
             System.out.println(i + ":00");
             System.out.println(swellHtFt + "ft");
             System.out.println(windSpeedKph + "Kph");
@@ -47,12 +53,6 @@ public class Request {
             System.out.println();
 
         }
-
-        RequestTest requestTest = new RequestTest();
-        requestTest.getData();
-
-
-
     }
 }
 

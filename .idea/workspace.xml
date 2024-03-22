@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database.">
+    <list default="true" id="b271923e-b1bc-47c8-939c-4720de5cc3fc" name="Changes" comment="Implementing OOP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/BeachEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLite/Connect.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710979302717</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implementing OOP">
+      <option name="closed" value="true" />
+      <created>1711142892630</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711142892630</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +189,7 @@
     <MESSAGE value="Added wind speed in kph and wind direction" />
     <MESSAGE value="Reformatted" />
     <MESSAGE value="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented SQLite database with swell height, wind speed, wind direction as column names.&#10;&#10;Implementing OOP methods and parsing JSON data from 'Request' into the database." />
+    <MESSAGE value="Implementing OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing OOP" />
   </component>
 </project>
